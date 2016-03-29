@@ -13,6 +13,8 @@ namespace GUI
     public partial class FormPrincipal : Form
     {
         private FormCadastroDesejos formDesejos;
+        private FormCadastroAmigos formAmigos;
+        
         public FormPrincipal()
         {
             InitializeComponent();
@@ -24,5 +26,17 @@ namespace GUI
                 formDesejos = new FormCadastroDesejos();
             formDesejos.ShowDialog(this);
         }
+
+        private void amigosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (formAmigos == null)
+            {
+                formAmigos = new FormCadastroAmigos();
+            }
+            formAmigos.ShowDialog(this);
+        }
+
+       
+
     }
 }

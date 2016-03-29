@@ -9,7 +9,6 @@ namespace Controller
 {
     public class ControllerAmigo
     {
-
         public bool GravarAmigo(Amigo amigo)
         {
             SqlConnection conexao = ADODBConnection.Connection();
