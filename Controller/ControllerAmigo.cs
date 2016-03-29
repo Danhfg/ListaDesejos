@@ -45,7 +45,7 @@ namespace Controller
             SqlConnection conexao = ADODBConnection.Connection();
             SqlCommand comando = conexao.CreateCommand();
             comando.CommandText = "delete from tbl_amigo where id_amigo=@idamigo";
-            comando.Parameters.AddWithValue("@id_amigo", idAmigo);
+            comando.Parameters.AddWithValue("@idamigo", idAmigo);
             conexao.Open();
             int linhasModificadas = comando.ExecuteNonQuery();
             conexao.Close();
